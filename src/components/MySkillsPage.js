@@ -2,7 +2,7 @@ import React from 'react'
 
 function MySkillsPage() {
   return (
-    <div>MySkillsPage</div>
+    <div>MySkills</div>
   )
 }
 
