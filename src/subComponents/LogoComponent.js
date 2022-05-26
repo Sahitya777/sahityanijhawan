@@ -7,7 +7,7 @@ const Logo=styled.h1`
 
     position:fixed;
     left:2rem;
-    top:0rem;
+    top:2rem;
     z-index:3;
 `
 function LogoComponent() {
