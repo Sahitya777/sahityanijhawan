@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { NavLink } from 'react-router-dom'
 import { YinYang } from './Allsvgs'
+import Intro from './Intro'
 
 const MainContainer=styled.div`
     background: ${props=>props.theme.text};
@@ -45,7 +46,7 @@ const Blog=styled(NavLink)`
     z-index: 1;
 `
 const Work=styled(NavLink)`
-    color: black;
+    color: ${props=>props.click ? 'white':'black'};
     position: absolute;
     top: 50%;
     left: calc(1rem + 2vw);
@@ -65,7 +66,7 @@ const BottomBar=styled.div`
     justify-content:space-evenly;
 `
 const About=styled(NavLink)`
-    color: black;
+    color: ${props=>props.click ? 'white':'black'};
     text-decoration: none;
     z-index: 1;
 `
@@ -84,36 +85,57 @@ const rotate=keyframes`
 `
 const Center=styled.button`
     position:absolute;
-    top:50%;
-    left:50%;
+    top: ${props=>props.click ?'85%':'50%'};
+    left:${props=>props.click ? '92%':'50%'};
     transform:translate(-50%,-50%);
     border:none;
-    outline:none;
+    outline:none; 
     background-color:transparent;
     cursor:pointer;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    transition: all 1s ease;
     &>:first-child{
         animation:${rotate} infinite 1.5s linear;
     }
     &>:last-child{
+        display:${props=>props.click ? 'none':'inline-block'}
         padding-top:1rem;
     }
 `
+
+const DarkDiv=styled.div`
+    position:absolute;
+    background-color:#000;
+    top:0;
+    bottom:0;
+    right:50%;
+    width:${props=>props.click ? '50%':'0%'};
+    height:${props=>props.click ? '100%':'0%'};
+    z-index:1;
+    transition: height 0.5s ease, width 1s ease 0.5s;
+`
+
 const Main=()=> {
+
+    const [click,setClick]=useState(false);
+
+    const handleClick=()=>setClick(!click);
+
   return (
     <MainContainer>
+        <DarkDiv click={click}/>
         <Container>
             <PowerButton/>
-            <LogoComponent/>
-            <SocialIcons/>
+            <LogoComponent theme={click ?'dark':'light'}/>
+            <SocialIcons theme={click ?'dark':'light'}/>
+            
 
 
-            <Center>
-                <YinYang width={200} height={200} fill='currentColor'/>
+            <Center click={click}>
+                <YinYang onClick={()=>handleClick()} width={click ? 120:200} height={click ? 120:200} fill='currentColor'/>
                 <span>Click Here</span>
             </Center>
             <Contact target="_blank" to={{pathname:"mailto:sahityanijhawan@gmail.com"}}>
@@ -126,13 +148,13 @@ const Main=()=> {
                     Blog
                 </h3>
             </Blog>
-            <Work to="/work">
+            <Work to="/work" click={click}>
                 <h3>
                     Work
                 </h3>
             </Work>
             <BottomBar>
-                <About to="/about">
+                <About to="/about" click={click}>
                     <h3>
                         About Me.
                     </h3>
@@ -144,6 +166,7 @@ const Main=()=> {
                 </Skills>
             </BottomBar>
         </Container>
+        {click ?<Intro click={click}/>:null}
     </MainContainer>
   )
 }
