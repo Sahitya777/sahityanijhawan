@@ -64,7 +64,7 @@ const AnchorComponent=(props)=> {
         
         <Slider ref={ref}>
             {
-                [...Array(33)].map((x,id)=>{
+                [...Array(props.numbers)].map((x,id)=>{
                     return <Link key={id} width={25} height={25} fill='currentColor' className='chain' />
                 })
             }
