@@ -8,7 +8,7 @@ const Power=styled.button`
     left:50%;
     transform: translate(-50%,0);
 
-    background-color:wheat;
+    background-color:#FCF6F4;
     padding:0.3rem;
     border-radius:50%;
     border:1px solid #000;

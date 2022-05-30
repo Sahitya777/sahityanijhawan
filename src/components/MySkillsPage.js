@@ -50,6 +50,9 @@ const Title=styled.h2`
 
     }
   }
+  span{
+    margin-left:1rem;
+  }
   &*>:first-child{
     margin-left: 1rem;
 
@@ -85,7 +88,7 @@ const MySkillsPage=()=> {
         <ParticleComponent theme='light'/>
         <Main>
           <Title>
-            <Design width={40} height={40} /> Mobile Developer
+            <Design width={40} height={40} /><span> Mobile Developer</span> 
           </Title>
           <Description>
             I love to make clean and simple mobile apps. 
@@ -113,7 +116,7 @@ const MySkillsPage=()=> {
         </Main>
         <Main>
           <Title>
-            <Develope width={40} height={40} /> Frontend Developer
+            <Develope width={40} height={40} /><span>Frontend Developer</span> 
           </Title>
           <Description>
             I value buisness or brand for which i'm creating, thus i enjoy bringing new ideas to life. 
