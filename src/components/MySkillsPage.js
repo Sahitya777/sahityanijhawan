@@ -7,7 +7,7 @@ import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent'
-
+import SoundBar from '../subComponents/SoundBar'
 
 const Box=styled.div`
   background-color:${props=>props.theme.body};
@@ -89,6 +89,7 @@ z-index:0;
 const MySkillsPage=()=> {
   return (
     <ThemeProvider theme={lightTheme}>
+      <SoundBar/>
       <Box>
         <LogoComponent theme='dark'/>
         <SocialIcons theme='light'/>

@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom'
 import { YinYang } from './Allsvgs'
 import Intro from './Intro'
 import { motion } from 'framer-motion'
+import SoundBar from '../subComponents/SoundBar'
 const MainContainer=styled.div`
     background: wheat;
     width:100vw;
@@ -125,6 +126,7 @@ const Main=()=> {
 
   return (
     <MainContainer>
+        <SoundBar/>
         <DarkDiv click={click}/>
         <Container>
             <PowerButton/>

@@ -11,7 +11,7 @@ import {Work} from '../data/WorkData'
 import Card from '../subComponents/Card';
 import { YinYang } from './Allsvgs';
 import { motion } from 'framer-motion';
-
+import SoundBar from '../subComponents/SoundBar';
 
 const Box = styled.div`
 background-color: black;
@@ -81,6 +81,7 @@ const WorkPage = () => {
 
     return (
         <ThemeProvider theme={DarkTheme}>
+        <SoundBar/>
 <Box>
 
 <LogoComponent theme='dark'/>

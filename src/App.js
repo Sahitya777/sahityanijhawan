@@ -2,7 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 import GlobalStyle from './GlobalStyles'
 // import {ThemeProvider} from "styled-components"
-// import { lightTheme } from './components/Themes'
+ import { lightTheme } from './components/Themes'
 import Main from './components/Main';
 import AboutPage from './components/AboutPage';
 import BlogPage from './components/BlogPage';
@@ -11,7 +11,8 @@ import MySkillsPage from './components/MySkillsPage';
 import { Switch } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import SoundBar from './subComponents/SoundBar';
+// import SoundBar from './subComponents/SoundBar';
+import { ThemeProvider } from 'styled-components';
 
 
 
@@ -22,8 +23,9 @@ function App() {
 
   return (
     <div>
+      <ThemeProvider theme={lightTheme}>
       <GlobalStyle/>
-      <SoundBar/>
+      
       <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.pathname}>
           <Route exact path="/" component={Main} />
@@ -34,6 +36,9 @@ function App() {
         </Switch>
         
       </AnimatePresence>
+      </ThemeProvider>
+
+
       </div>
 
   )

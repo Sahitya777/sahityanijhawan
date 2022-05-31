@@ -39,13 +39,13 @@ const play = keyframes`
 }
 `
 const Line = styled.span`
-background: ${props => props.theme.text};
-border: 1px solid ${props => props.theme.body};
+background: ${props => props.theme.body};
+border: 1px solid ${props => props.theme.text};
 animation:${play} 1s ease infinite;
 animation-play-state: ${props => props.click ? "running" : "paused"};
 height: 1rem;
-width: 2px;
-margin:0 0.1rem
+margin:0.1rem;
+margin-right:4px;
 `
 
 const SoundBar = () => {

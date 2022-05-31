@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-
+import SoundBar from '../subComponents/SoundBar'
 
 const Box = styled(motion(NavLink))`
 width: calc(10rem + 15vw);
@@ -81,6 +81,7 @@ const BlogComponent = (props) => {
         variants={Item}
         
         >
+            <SoundBar/>
             <Box target="_blank" to={{pathname: link}}
         >
             <Image img={imgSrc} />

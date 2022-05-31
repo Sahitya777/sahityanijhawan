@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import {DarkTheme} from './Themes';
-
+import SoundBar from '../subComponents/SoundBar';
 
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
@@ -16,6 +16,7 @@ width: 100vw;
 height:100vh;
 position: relative;
 overflow: hidden;
+
 `
 const float = keyframes`
 0% { transform: translateY(-10px) }
@@ -67,6 +68,7 @@ z-index:0;
 const AboutPage = () => {
     return (
         <ThemeProvider theme={DarkTheme}>
+        <SoundBar/>
 <Box>
 
 <LogoComponent theme='dark'/>
