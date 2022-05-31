@@ -9,13 +9,16 @@ import PowerButton from '../subComponents/PowerButton';
 
 import {Work} from '../data/WorkData'
 import Card from '../subComponents/Card';
+import { YinYang } from './Allsvgs';
+
 
 const Box = styled.div`
 background-color: black;
 
 height:400vh;
 position: relative;
-overflow: hidden;
+display:flex;
+align-items:center;
 `
 const Main=styled.ul`
     position:fixed;
@@ -27,18 +30,37 @@ const Main=styled.ul`
 
 
 `
+const Rotate=styled.span`
+    display:block;
+    position:fixed;
+    right:1rem;
+    bottom:1rem;
+    width:80px;
+    height:80px;
+    z-index:1;
 
-
+`
+const Text = styled.h1`
+position: fixed;
+top: 10%;
+right: 20%;
+color:rgba(255,255,255,0.1);
+font-size: calc(5rem + 5vw);
+z-index:0;
+`
 
 
 const WorkPage = () => {
     const ref=useRef(null);
-
+    const yinyang=useRef(null);
     useEffect(()=>{
         let element=ref.current;
 
         const rotate=()=>{
             element.style.transform=`translateX(${-window.pageYOffset}px)`
+
+            return (yinyang.current.style.transform =
+                'rotate(' + -window.pageYOffset + 'deg)')
         }
 
         window.addEventListener('scroll',rotate)
@@ -62,6 +84,12 @@ const WorkPage = () => {
             )
         }
     </Main>
+    <Rotate ref={yinyang}>
+        <YinYang width={80} height={80} fill={DarkTheme.text} />
+    </Rotate>
+    <Text>
+        WORK
+    </Text>
 
         </Box>
 

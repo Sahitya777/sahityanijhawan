@@ -8,6 +8,7 @@ import {Blogs} from '../data/BlogData';
 import BlogComponent from './BlogComponent'
 import AnchorComponent from '../subComponents/Anchor'
 
+
 const MainContainer=styled.div`
   background-image:url(${img});
   background-size:cover;
@@ -36,6 +37,14 @@ const Grid=styled.div`
   grid-gap:calc(1rem + 2vw);
 
 `
+const Text = styled.h1`
+position: fixed;
+top: 5rem;
+left:5rem;
+color:rgba(0,0,0,0.1);
+font-size: calc(5rem + 5vw);
+z-index:0;
+`
 const BlogPage=()=> {
   const [numbers,setnumbers]=useState(0);
   useEffect(()=>{
@@ -58,6 +67,9 @@ const BlogPage=()=> {
             }
           </Grid>
         </Center>
+        <Text>
+          BLOG
+        </Text>
       </Container>
     </MainContainer>
   )

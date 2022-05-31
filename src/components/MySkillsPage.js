@@ -78,6 +78,14 @@ const Description=styled.div`
   }
 
 `
+const Text = styled.h1`
+position: fixed;
+top: 80%;
+right: 30%;
+color:rgba(0,0,0,0.1);
+font-size: calc(5rem + 5vw);
+z-index:0;
+`
 const MySkillsPage=()=> {
   return (
     <ThemeProvider theme={lightTheme}>
@@ -138,6 +146,9 @@ const MySkillsPage=()=> {
             </p>
           </Description>
         </Main>
+        <Text>
+          SKILLS
+        </Text>
       </Box>
     </ThemeProvider>
     

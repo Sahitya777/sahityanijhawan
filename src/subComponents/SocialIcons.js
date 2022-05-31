@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Facebook, Github, Twitter, YouTube } from '../components/Allsvgs'
+import {Github, Linkedin, Twitter, YouTube } from '../components/Allsvgs'
 import styled from 'styled-components'
 import { DarkTheme } from '../components/Themes'
 const Icons=styled.div`
@@ -32,20 +32,20 @@ const SocialIcons=(props)=> {
             </NavLink>
         </div>
         <div>
-            <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://github.com/Sahitya777"}}>
+            <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://twitter.com/Sahi02255221"}}>
                 <Twitter width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
             </NavLink>
         </div>
         <div>
-            <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://github.com/Sahitya777"}}>
-                <Facebook width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
+            <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://www.linkedin.com/in/sahitya-nijhawan-704027213/"}}>
+                <Linkedin width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
             </NavLink>
         </div>
-        <div>
-            <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://github.com/Sahitya777"}}>
+        {/* <div>
+            <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://www.youtube.com/channel/UC0OOzxJXnhDySCbatV1akxA"}}>
                 <YouTube width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
             </NavLink>
-        </div>
+        </div> */}
         <Line color={props.theme}/>
     </Icons>
     

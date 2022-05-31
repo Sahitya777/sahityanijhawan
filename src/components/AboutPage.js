@@ -53,7 +53,14 @@ const Main =  styled.div`
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
 `
-
+const Text = styled.h1`
+position: fixed;
+top: 10%;
+left: 5%;
+color:rgba(255,255,255,0.1);
+font-size: calc(5rem + 5vw);
+z-index:0;
+`
 
 
 
@@ -77,7 +84,9 @@ I'm interested in the whole frontend stack Like trying new things and building g
 <br/> <br/>
 I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
         </Main>
-
+        <Text>
+            ABOUT
+        </Text>
         
 
 
