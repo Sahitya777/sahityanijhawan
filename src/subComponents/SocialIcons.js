@@ -1,8 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import {Github, Linkedin, Twitter, YouTube } from '../components/Allsvgs'
+import {Github, Linkedin, Twitter } from '../components/Allsvgs'
 import styled from 'styled-components'
 import { DarkTheme } from '../components/Themes'
+import { motion } from 'framer-motion'
 const Icons=styled.div`
     display:flex;
     flex-direction:column;
@@ -17,7 +18,7 @@ const Icons=styled.div`
         margin:0.5rem 0;
     }
 `
-const Line=styled.span`
+const Line=styled(motion.span)`
     width:2px;
     height:8rem;
     background-color: ${props=>props.color==='dark' ? DarkTheme.text:DarkTheme.body};
@@ -26,27 +27,51 @@ const Line=styled.span`
 const SocialIcons=(props)=> {
   return (
     <Icons>
-        <div>
+        <motion.div
+             initial={{transform:"scale(0)"}}
+             animate={{scale:[0,1,1.5,1]}}
+             transition={{type:'spring', duration:1, delay:1}}       
+        >
             <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://github.com/Sahitya777"}}>
                 <Github width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
             </NavLink>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1.2}}        
+        >
             <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://twitter.com/Sahi02255221"}}>
                 <Twitter width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
             </NavLink>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+            initial={{transform:"scale(0)"}}
+            animate={{scale:[0,1,1.5,1]}}
+            transition={{type:'spring', duration:1, delay:1.4}}        
+        >
             <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://www.linkedin.com/in/sahitya-nijhawan-704027213/"}}>
                 <Linkedin width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
             </NavLink>
-        </div>
-        {/* <div>
+        </motion.div>
+        {/* <motion.div>
             <NavLink style={{color:'inherit'}} target="_blank" to={{pathname:"https://www.youtube.com/channel/UC0OOzxJXnhDySCbatV1akxA"}}>
                 <YouTube width={25} height={25} fill={props.theme==='dark' ? DarkTheme.text:DarkTheme.body}/>
             </NavLink>
-        </div> */}
-        <Line color={props.theme}/>
+        </motion.div> */}
+        <Line color={props.theme}
+        initial={
+            {
+                height:0
+            }
+        }
+        animate={{
+            height:'8rem'
+        }}
+        transition={{
+            type:'spring',duration:1,delay:0.8
+        }}
+        />
     </Icons>
     
   )
