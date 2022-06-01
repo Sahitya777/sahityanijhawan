@@ -22,6 +22,9 @@ z-index:5;
     background-color: black;
     transition: all 0.3s ease;
 }
+@media screen and (max-width:800px){
+    width:calc(60vw);
+}
 `
 
 const Image = styled.div`

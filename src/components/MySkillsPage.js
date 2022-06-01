@@ -91,7 +91,7 @@ const MySkillsPage=()=> {
     <ThemeProvider theme={lightTheme}>
       <SoundBar/>
       <Box>
-        <LogoComponent theme='dark'/>
+        <LogoComponent theme='light'/>
         <SocialIcons theme='light'/>
         <PowerButton/>
         <ParticleComponent theme='light'/>

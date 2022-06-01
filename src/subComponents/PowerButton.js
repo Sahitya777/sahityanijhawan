@@ -37,7 +37,7 @@ const Power=styled.button`
 
     }
 `
-
+ 
 function PowerButton() {
   return (
     <Power>

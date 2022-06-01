@@ -18,12 +18,27 @@ const Slider=styled.div`
     .chain{
         transform: rotate(135deg);
     }
+    @media screen and (max-width:800px){
+        right:1rem;
+    }
+    @media screen and (max-width:580px){
+        display:none;
+    }
 
 `
 const PreDisplay=styled.div`
     position:absolute;
     top:0;
     right:2rem;
+    @media screen and (max-width:800px){
+        right:1rem;
+    }
+    @media screen and (max-width:580px){
+        display:none;
+        .chain{
+            display:none;
+        }
+    }
 
 `
 const AnchorComponent=(props)=> {

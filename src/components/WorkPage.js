@@ -21,6 +21,7 @@ display:flex;
 align-items:center;
 
 
+
 `
 const Main=styled(motion.ul)`
     position:fixed;
@@ -114,6 +115,7 @@ const WorkPage = () => {
     </Rotate>
     <Text>
         WORK
+        
     </Text>
 
         </Box>
