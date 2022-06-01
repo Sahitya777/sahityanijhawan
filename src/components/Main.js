@@ -12,14 +12,18 @@ const MainContainer=styled.div`
     background: wheat;
     width:100vw;
     height:100vh;
-    overflow:hidden;
-    
+    overflow:hidden; 
     position:relative;
     h2,h3,h4,h5,h6{
         font-family:'Karla',sans-serif;
         font-weight:500;
-
     }
+    @media screen and (max-width:640px){
+        h2{
+            font-size:1.2em;
+        }
+    }
+
 `
 const Container=styled.div`
     padding:2rem;
@@ -103,6 +107,10 @@ const Center=styled.button`
     &>:last-child{
         display:${props=>props.click ? 'none':'inline-block'}
         padding-top:1rem;
+    }
+    @media screen and (max-width:800px){
+        width:150px;
+        height:150px;
     }
 `
 

@@ -53,6 +53,23 @@ const Main =  styled.div`
   top: 10rem;
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
+  @media screen and (max-width:640px){
+    width: 60vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width:480px){
+    width: 50vw;
+    height: auto;
+    backdrop-filter: none;
+    margin-top: 2rem;
+}
+@media screen and (max-width:320px){
+    padding:1rem;
+    font-size:calc(0.5rem + 1vw);
+}
 `
 const Text = styled.h1`
 position: fixed;

@@ -31,13 +31,18 @@ const Power=styled.button`
         text-decoration:none;
         color:inherit;
     }
+    @media screen and (max-width:641px){
+        width:2rem;
+        height:2rem;    
+
+    }
 `
 
 function PowerButton() {
   return (
     <Power>
-        <NavLink to="/">
-            <PowerBtn width={30} height={30} fill='currentColor'/>
+        <NavLink className='svgs' to="/">
+            <PowerBtn width={30} height={30} fill='currentColor' />
         </NavLink>
         
     </Power>

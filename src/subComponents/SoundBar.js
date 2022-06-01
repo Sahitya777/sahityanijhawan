@@ -10,6 +10,10 @@ position:fixed;
 left:8rem;
 top:3rem;
 z-index:10;
+@media screen and (max-width:640px){
+    left:1rem;
+    top:9rem;
+}
 &>*:nth-child(1){
     animation-delay: 0.2s;
 }

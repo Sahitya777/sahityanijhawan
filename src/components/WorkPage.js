@@ -15,11 +15,12 @@ import SoundBar from '../subComponents/SoundBar';
 
 const Box = styled.div`
 background-color: black;
-
 height:400vh;
 position: relative;
 display:flex;
 align-items:center;
+
+
 `
 const Main=styled(motion.ul)`
     position:fixed;
@@ -28,6 +29,18 @@ const Main=styled(motion.ul)`
     height:40vh;
     display:flex;
     color:white;
+    @media screen and (max-width:800px){
+        left: calc(8rem + 15vw);
+    }
+    @media screen and  (max-width: 640px)
+{
+    left:calc(2rem + 15vw);
+    top:30%;
+}
+@media screen and (max-width:400px){
+    left:calc(1rem + 15vw);
+}
+
 
 
 `

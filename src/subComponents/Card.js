@@ -23,7 +23,24 @@ const Box=styled(motion.div)`
         border:1px solid ${props=>props.theme.text};
 
     }
-
+    @media screen and (max-width:640px){
+    width: 14rem;
+    margin-right: 4rem;
+    height: 35vh;
+    padding: 1.5rem;
+    }
+    @media screen and (max-width:400px){
+        width: 12rem;
+        margin-right: 4rem;
+        height: 35vh;
+        padding: 1.5rem;
+    
+    }
+    @media screen and (max-width:320px){
+        width:10rem;
+        margin-right:4rem;
+        height:40vh;
+    }
 `
 const Title=styled.h2`
     font-size:calc(1em + 0.5vw);
