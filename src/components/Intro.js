@@ -19,12 +19,14 @@ background: linear-gradient(
     to right,
     white 50%,
     black 50%) top;
-   
-background-size: 100% 2px;
-background-repeat:no-repeat;
+    background-size: 100% 2px;
+    background-repeat:no-repeat;
     border-left: 2px solid white;
     border-right: 2px solid black;
     z-index:1;
+    @media screen and (max-width:768px){
+        width:50vw;
+    }
 `
 const SubBox=styled.div`
     width:50%;

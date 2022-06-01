@@ -48,6 +48,9 @@ left:5rem;
 color:rgba(0,0,0,0.1);
 font-size: calc(5rem + 5vw);
 z-index:0;
+@media screen and (max-width:400px){
+  font-size:calc(3rem + 5vw);
+}
 `
 
 

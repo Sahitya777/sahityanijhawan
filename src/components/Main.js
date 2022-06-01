@@ -108,10 +108,7 @@ const Center=styled.button`
         display:${props=>props.click ? 'none':'inline-block'}
         padding-top:1rem;
     }
-    @media screen and (max-width:800px){
-        width:150px;
-        height:150px;
-    }
+
 `
 
 const DarkDiv=styled.div`
@@ -124,6 +121,7 @@ const DarkDiv=styled.div`
     height:${props=>props.click ? '100%':'0%'};
     z-index:1;
     transition: height 0.5s ease, width 1s ease 0.5s;
+
 `
 
 const Main=()=> {
