@@ -25,7 +25,11 @@ background: linear-gradient(
     border-right: 2px solid black;
     z-index:1;
     @media screen and (max-width:768px){
-        width:50vw;
+        width:65vw;
+    }
+    @media screen and (max-width:420px){
+        width:70vw;
+        
     }
 `
 const SubBox=styled.div`
@@ -39,7 +43,13 @@ const SubBox=styled.div`
         left:50%;
         transform: translate(-50%,0);
         width:100%;
-        heigth:auto;
+        height:auto;
+    }
+    @media screen and (max-width:600px){
+        .pic{
+            width:160%;
+            
+        }
     }
 
 `
@@ -56,6 +66,14 @@ const Text=styled.div`
         color: rgba(252, 246, 244,0.6);
         font-size:calc(0.5rem +1.5vw);
         font-weight:300;
+    }
+    @media screen and (max-width:600px){
+        font-size: calc(1.5em + 1vw);
+        padding:1rem;
+    }
+    @media screen and (max-width:380px){
+        padding:0rem;
+        margin-left:7px;
     }
 `
 const Intro=(props)=> {
