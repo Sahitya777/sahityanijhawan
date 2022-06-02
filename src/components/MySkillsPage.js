@@ -17,6 +17,11 @@ const Box=styled.div`
   display:flex;
   justify-content:space-evenly;
   align-items:center;
+  @media screen and (max-width:800px){
+    flex-direction:column;
+    height:104vh;
+    margin-left:20px;
+  }
 
 `
 const Main=styled.div`
@@ -36,6 +41,11 @@ const Main=styled.div`
   &:hover{
     color:${props=>props.theme.body};
     background-color:${props=>props.theme.text};
+  }
+  @media screen and (max-width:800px){
+    width:60vw;
+    height:35vh;
+    margin-top:-30px;
   }
 
 `

@@ -108,6 +108,12 @@ const Center=styled.button`
         display:${props=>props.click ? 'none':'inline-block'}
         padding-top:1rem;
     }
+    @media screen and (max-width:800px){
+
+    width: 150px;
+    height: 150px;
+    }
+
 
 `
 
