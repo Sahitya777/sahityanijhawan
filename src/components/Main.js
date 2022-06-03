@@ -4,7 +4,7 @@ import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { NavLink } from 'react-router-dom'
-import { YinYang } from './Allsvgs'
+
 import Intro from './Intro'
 import { motion } from 'framer-motion'
 import SoundBar from '../subComponents/SoundBar'
