@@ -9,7 +9,7 @@ import Intro from './Intro'
 import { motion } from 'framer-motion'
 import SoundBar from '../subComponents/SoundBar'
 const MainContainer=styled.div`
-    background: wheat;
+    background: #c2c2c2;
     width:100vw;
     height:100vh;
     overflow:hidden; 
