@@ -5,9 +5,9 @@ import styled from 'styled-components'
 import SoundBar from '../subComponents/SoundBar'
 
 const Box = styled(motion(NavLink))`
-width: calc(10rem + 15vw);
+width: calc(20rem + 15vw);
 text-decoration: none;
-height: 20rem;
+height: 30rem;
 padding: 1rem;
 color: black;
 border: 2px solid black;
