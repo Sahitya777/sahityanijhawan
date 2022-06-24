@@ -10,34 +10,6 @@ export const Work = [
     },
     {
         id:2,
-        name:"BeatBox Website",
-        description:"A Beatbox app built with Javascript.With nice colors voice and effects on playing",
-        tags:["javascript","css"],
-        
-        demo:"https://beatbox-app-96e49.web.app/",
-        github:"https://github.com/Sahitya777/Beatbox-App"
-        
-    },
-    {
-        id:3,
-        name:"Tesla Clone",
-        description:"A clone of Tesla  build using ReactJS and redux.",
-        tags:["react","redux","css"],
-        
-        demo:"https://tesla-clone-817a8.web.app/",
-        github:"https://github.com/Sahitya777/tesla-clone"
-    },
-    {
-        id:4,
-        name:"Pokedex",
-        description:"A cool looking Pokedex built in react js that will tell you the stats of many pokemon using PokeApi.",
-        tags:["react","styledComponents","API"],
-        
-        demo:"https://pokedex-6aedc.web.app/",
-        github:"https://github.com/Sahitya777/pokedex"
-       
-    },{
-        id:5,
         name:"FunWays",
         description:"A multipurpose website that tells ur age in days lets us play stone, paper, scissors and even blackjack. ",
         tags:["Html","css","Javascript"],
@@ -46,6 +18,46 @@ export const Work = [
         github:"https://github.com/Sahitya777/jss-challenges"
         
     },
+    {
+        id:3,
+        name:"PowerZone",
+        description:"A exercises website that provides u with the info on all exercises based on muscles,equipment,body parts.",
+        tags:["react","rapid-api","material-ui"],
+        
+        demo:"https://powerzone.vercel.app/",
+        github:"https://github.com/Sahitya777/powerzone"
+        
+    },
+    {
+        id:4,
+        name:"Tesla Clone",
+        description:"A clone of Tesla  build using ReactJS and redux.",
+        tags:["react","redux","css"],
+        
+        demo:"https://tesla-clone-817a8.web.app/",
+        github:"https://github.com/Sahitya777/tesla-clone"
+    },
+    {
+        id:5,
+        name:"Pokedex",
+        description:"A cool looking Pokedex built in react js that will tell you the stats of many pokemon using PokeApi.",
+        tags:["react","styledComponents","API"],
+        
+        demo:"https://pokedex-6aedc.web.app/",
+        github:"https://github.com/Sahitya777/pokedex"
+       
+    },
+    {
+        id:6,
+        name:"TodoWebsite",
+        description:"A simple todo website built with the help of basic react",
+        tags:["react","styledComponents","react-hooks"],
+        
+        demo:"https://todowebsite.vercel.app/",
+        github:"https://github.com/Sahitya777/todowebsite"
+       
+    },
+
  
     
   
