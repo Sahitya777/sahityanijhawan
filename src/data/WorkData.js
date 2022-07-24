@@ -1,6 +1,24 @@
 export const Work = [
     {
         id:1,
+        name:"Tik-Tok Clone",
+        description:"A full stack tiktok-clone built with next js google auth and much more",
+        tags:["next","google-auth","sanity-backend"],
+        
+        demo:"tiktik-clone-liard.vercel.app/",
+        github:"https://github.com/Sahitya777/tiktok-clone"
+    },
+    {
+        id:2,
+        name:"CryptoWorld",
+        description:"a cryptocurrency website that tells u about various cryptocurrencies values and all the recent news",
+        tags:["react","rapid-api","ant-design"],
+        
+        demo:"cryptoworld-two.vercel.app",
+        github:"https://github.com/Sahitya777/cryptoworld"
+    },
+    {
+        id:3,
         name:"Sorting Visualizer",
         description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
         tags:["react","gsap","styledComponents"],
@@ -9,7 +27,7 @@ export const Work = [
         github:"https://github.com/Sahitya777/sorting-visualizer"
     },
     {
-        id:2,
+        id:4,
         name:"FunWays",
         description:"A multipurpose website that tells ur age in days lets us play stone, paper, scissors and even blackjack. ",
         tags:["Html","css","Javascript"],
@@ -19,7 +37,7 @@ export const Work = [
         
     },
     {
-        id:3,
+        id:5,
         name:"PowerZone",
         description:"A exercises website that provides u with the info on all exercises based on muscles,equipment,body parts.",
         tags:["react","rapid-api","material-ui"],
@@ -29,7 +47,7 @@ export const Work = [
         
     },
     {
-        id:4,
+        id:6,
         name:"Tesla Clone",
         description:"A clone of Tesla  build using ReactJS and redux.",
         tags:["react","redux","css"],
@@ -38,7 +56,7 @@ export const Work = [
         github:"https://github.com/Sahitya777/tesla-clone"
     },
     {
-        id:5,
+        id:7,
         name:"Pokedex",
         description:"A cool looking Pokedex built in react js that will tell you the stats of many pokemon using PokeApi.",
         tags:["react","styledComponents","API"],
@@ -48,7 +66,7 @@ export const Work = [
        
     },
     {
-        id:6,
+        id:8,
         name:"TodoWebsite",
         description:"A simple todo website built with the help of basic react",
         tags:["react","styledComponents","react-hooks"],
