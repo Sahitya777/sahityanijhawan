@@ -5,7 +5,7 @@ export const Work = [
         description:"A full stack tiktok-clone built with next js google auth and much more",
         tags:["next","google-auth","sanity-backend"],
         
-        demo:"tiktik-clone-liard.vercel.app/",
+        demo:"https://tiktik-clone-liard.vercel.app/",
         github:"https://github.com/Sahitya777/tiktok-clone"
     },
     {
@@ -14,7 +14,7 @@ export const Work = [
         description:"a cryptocurrency website that tells u about various cryptocurrencies values and all the recent news",
         tags:["react","rapid-api","ant-design"],
         
-        demo:"cryptoworld-two.vercel.app",
+        demo:"https://cryptoworld-two.vercel.app/",
         github:"https://github.com/Sahitya777/cryptoworld"
     },
     {
