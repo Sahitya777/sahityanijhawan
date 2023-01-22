@@ -19,6 +19,15 @@ export const Work = [
     },
     {
         id:3,
+        name:"IPL Game Win Predcitor",
+        description:"An IPL Win Predictor that tells you the probability of winning of a batting team based on the given situation of runs, overs and wickets left.",
+        tags:["python","logistic-regression","streamlit"],
+        
+        demo:"https://sahitya777-iplwinpredicor-app-2u38sh.streamlit.app/",
+        github:"https://github.com/Sahitya777/IPLWinPredicor"
+    },
+    {
+        id:4,
         name:"Sorting Visualizer",
         description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
         tags:["react","gsap","styledComponents"],
@@ -27,7 +36,7 @@ export const Work = [
         github:"https://github.com/Sahitya777/sorting-visualizer"
     },
     {
-        id:4,
+        id:5,
         name:"FunWays",
         description:"A multipurpose website that tells ur age in days lets us play stone, paper, scissors and even blackjack. ",
         tags:["Html","css","Javascript"],
@@ -37,7 +46,7 @@ export const Work = [
         
     },
     {
-        id:5,
+        id:6,
         name:"PowerZone",
         description:"A exercises website that provides u with the info on all exercises based on muscles,equipment,body parts.",
         tags:["react","rapid-api","material-ui"],
@@ -47,7 +56,7 @@ export const Work = [
         
     },
     {
-        id:6,
+        id:7,
         name:"Tesla Clone",
         description:"A clone of Tesla  build using ReactJS and redux.",
         tags:["react","redux","css"],
@@ -56,7 +65,7 @@ export const Work = [
         github:"https://github.com/Sahitya777/tesla-clone"
     },
     {
-        id:7,
+        id:8,
         name:"Pokedex",
         description:"A cool looking Pokedex built in react js that will tell you the stats of many pokemon using PokeApi.",
         tags:["react","styledComponents","API"],
@@ -66,7 +75,7 @@ export const Work = [
        
     },
     {
-        id:8,
+        id:9,
         name:"TodoWebsite",
         description:"A simple todo website built with the help of basic react",
         tags:["react","styledComponents","react-hooks"],
