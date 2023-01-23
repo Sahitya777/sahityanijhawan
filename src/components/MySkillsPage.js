@@ -128,7 +128,10 @@ const MySkillsPage=()=> {
             </strong>
             <ul>
               <li>
-                Android Studio
+                Android Studio (Java)
+              </li>
+              <li>
+                React Native
               </li>
             </ul>
           </Description>
