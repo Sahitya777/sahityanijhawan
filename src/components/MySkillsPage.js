@@ -138,7 +138,7 @@ const MySkillsPage=()=> {
         </Main>
         <Main>
           <Title>
-            <Develope width={40} height={40} /><span>Frontend Developer</span> 
+            <Develope width={40} height={40} /><span>FullStack Developer</span> 
           </Title>
           <Description>
             I value buisness or brand for which i'm creating, thus i enjoy bringing new ideas to life. 
@@ -148,7 +148,7 @@ const MySkillsPage=()=> {
               Skills
             </strong>
             <p>
-              Html, Css, Js, React, Redux, Sass, FireBase, MongoDb, SQL etc.
+              Next js,React,Node js, Redux, Tailwind, FireBase, MongoDb, SQL etc.
             </p>
           </Description>
           <Description>
@@ -156,7 +156,7 @@ const MySkillsPage=()=> {
               Tools
             </strong>
             <p>
-              Vscode, Github, Codepen etc.
+              Vscode, Github, Codepen,Postman etc.
             </p>
           </Description>
         </Main>
