@@ -64,26 +64,6 @@ export const Work = [
         demo:"https://tesla-clone-817a8.web.app/",
         github:"https://github.com/Sahitya777/tesla-clone"
     },
-    {
-        id:8,
-        name:"Pokedex",
-        description:"A cool looking Pokedex built in react js that will tell you the stats of many pokemon using PokeApi.",
-        tags:["react","styledComponents","API"],
-        
-        demo:"https://pokedex-6aedc.web.app/",
-        github:"https://github.com/Sahitya777/pokedex"
-       
-    },
-    {
-        id:9,
-        name:"TodoWebsite",
-        description:"A simple todo website built with the help of basic react",
-        tags:["react","styledComponents","react-hooks"],
-        
-        demo:"https://todowebsite.vercel.app/",
-        github:"https://github.com/Sahitya777/todowebsite"
-       
-    },
 
  
     

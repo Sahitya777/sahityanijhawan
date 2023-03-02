@@ -124,7 +124,6 @@ const WorkPage = () => {
     </Rotate>
     <Text>
         WORK
-        
     </Text>
 
         </Box>
