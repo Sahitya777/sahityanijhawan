@@ -102,7 +102,7 @@ const AboutPage = () => {
         <Main>
         I'm a Full Stack developer located in India. I love to create simple yet beautiful websites with great user experience.
 <br /> <br/>
-I'm interested in the whole frontend stack Like trying new things and building great projects. I love to write blogs, make websites and read books.
+I am currently working as a Frontend Developer at Hashstack where i am building the dapp and working on web3 interactions.
 <br/> <br/>
 I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
         </Main>
